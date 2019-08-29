@@ -14,7 +14,7 @@ console.log(whatsThis());
 
 whatsThis.call(obj);  // 'Custom'
 console.log(whatsThis.call(obj));
-
+ 
 
 whatsThis.apply(obj); // 'Custom'
 console.log(whatsThis.apply(obj));
