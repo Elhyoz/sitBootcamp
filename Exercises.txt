@@ -1,0 +1,102 @@
+/*************************************
+* KIDS STUFF
+*************************************/
+
+// 1. Get from array below declared the items that match with other array on their property type.
+
+var data = [
+  {
+    type: 'input',
+    name: 'name'
+  },
+  {
+    type: 'input',
+    name: 'lastname'
+  },
+  {
+    type: 'select',
+    name: 'age'
+  },
+  {
+    type: 'select',
+    name: 'sex'
+  },
+  {
+    type: 'checkbox',
+    name: 'rememberme'
+  },
+  {
+    type: 'button',
+    name: 'submit'
+  }
+];
+
+var matches = ['input', 'select', 'checkbox'];
+
+var result = []; // Here your result
+
+
+// 2. Get string reverted using Array prototype as helper
+
+var str = 'Javascript';
+
+function strReverse(str) {
+    return '?'; // Your helper here
+}
+
+//console.log(strReverse(str)); // Result should be tpircsavaJ
+
+
+
+/**************************************
+* LEVEL UP
+**************************************/
+
+// 3. Get access to global scope on getName subfunction
+
+this.name = 'global';
+var module = {
+  name: 'local',
+  getName: function() { return this.name; }
+};
+
+//console.log(module.getName()); // Should be global
+
+// 4. Get access to global var to get the result
+
+var a = 2;
+
+(function IIFE() {
+  var a = 3;
+  var result = a + a; // Sum the local var a with global var a;
+  //console.log(result); // Should be 5;
+})();
+
+/*****************************************
+* YEAH!! YOU STILL BE HERE YET
+*****************************************/
+
+// 5. Convert and resolve the request using a callback
+
+var result = 0;
+
+function getValue (number) {
+  return number + 3;
+}
+
+result = getValue(2) 
+//console.log(result) // Should be 5;
+
+// 6. Resolve the request just when result has been got it by setTimeout, through a native promise
+
+function delayValue (value, delay) {
+  setTimeout(function () {
+
+  }, delay)
+} 
+
+/**************************************
+* REALLY?? OK, CHALLENGE ME!!
+**************************************/
+
+// 7. Surprise.

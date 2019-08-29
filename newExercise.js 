@@ -1,0 +1,27 @@
+/*A partir de dos objetos, 
+construye uno solo el cual comparta prototipos de ambos, es decir, 
+que el objeto final resultante debe tener en su cadena de prototipo las propiedades de ambos objetos, 
+los objetos son los siguientes*/
+
+const person = function() {
+  this.eyes = '',
+  this.hair = '',
+  this.skin = '',
+  this.sex = '',
+  this.name = ''
+
+}
+
+const developer = function() {
+  this.lang = 'JS'
+}
+
+
+const Bruce = new developer();
+Object.setPrototypeOf(Bruce, new person);
+
+console.log(Bruce);
+
+console.log(Object.getOwnPropertyNames(Bruce));
+
+

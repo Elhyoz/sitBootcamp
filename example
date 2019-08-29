@@ -1,0 +1,6 @@
+const miObjeto1 = {name: "mario"}
+const miObjeto2 = {name: "alfredo"}
+const miObjeto3 = {name: "reicardo"}
+
+const arreglo = [miObjeto1}]
+arreglo
