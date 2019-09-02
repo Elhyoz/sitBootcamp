@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="import"  href="https://cdn.rawgit.com/download/polymer-cdn/2.6.0/lib/polymer/polymer-element.html">
+
+  <title>Test de componente usando Polymer 2</title>
+</head>
+<body>
+  <!-- Ejemplo de un primer componente -->
+  <!-- <template id="mi-template">
+    <p>Hola! soy un Polymer Element simple!</p>
+  </template>
+  
+  <script>
+    class HolaComponentes extends Polymer.Element {
+      static get template() { return document.getElementById('mi-template') }
+      static get is() { return 'hola-componentes'; }
+    }
+
+    customElements.define(HolaComponentes.is, HolaComponentes);
+  </script>
+  
+  <hola-componentes></hola-componentes> -->
+  <!-- Termina el primer ejemplo -->
+
+  <!-- Ejemplo de otro componenten con dom-module -->
+  <dom-module id="nombre-componente">
+        <template>
+          <style>
+          h2 {
+            background-color: orange;
+            color: white;
+          }
+          </style>
+          <h2>Esto es un test</h2>
+        </template>
+      
+        <script>
+        class NombreComponente extends Polymer.Element {
+          static get is() {
+            return 'nombre-componente';
+          }
+        }
+        customElements.define(NombreComponente.is, NombreComponente);
+        </script>
+      </dom-module>
+    
+</body>
+</html>

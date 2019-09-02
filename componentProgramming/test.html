@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test de Custom Element</title>
+</head>
+<body>
+  
+  <hola-componentes></hola-componentes>
+
+  <script>
+    class HolaComponentes extends HTMLElement {
+      constructor() {
+        super();
+        this.attachShadow( {mode: 'open'} ).innerHTML = '<p>Hola! soy un Custom Element!</p>';
+      }
+    }
+    customElements.define('hola-componentes', HolaComponentes);
+  </script>
+</body>
+</html>
