@@ -42,6 +42,36 @@
           static get is() {
             return 'nombre-componente';
           }
+
+          static get properties(){
+            return {
+              myProp: {
+                type: String,
+                value: ''
+              },
+
+              prop2: {
+                type: Boolean,
+                value: false,
+              },
+
+              prop3:{
+                type: Number,
+                value: 10,
+              }, 
+
+            }
+          }
+
+          static get observers(){
+            return [
+              'checkMyProps(myProp, prop2, prop3)',
+            ]
+          }
+
+          checkMyProps(myProp, prop2, prop3){
+            
+          }
         }
         customElements.define(NombreComponente.is, NombreComponente);
         </script>
