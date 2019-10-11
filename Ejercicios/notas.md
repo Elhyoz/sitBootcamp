@@ -23,6 +23,7 @@ Outer Environment
 
 #Forma correcta de eliminar un elemento de un array.
     - splice: sustituye un miembro del array
+    Array.splice([index donde se eliminará o añadirá algo], [Número de objetos o elementos a añadir (opcional)], {elemento que sustituirá a otro en el index dado como primer parámetro});
 
 #Métods de array en polymer
 push, pop, shift, unshift, splice
@@ -40,3 +41,46 @@ Filter va en el dom-repeat
 El tipo de dato que retorna null es Object
 
 Bajo acoplamiento: cada uno tiene su propio módulo, pero comparte información
+
+
+
+this.$.ID
+
+bajo acoplamiento
+
+alta cohesion
+
+polimorfismo 
+
+encapsulamiento
+
+
+
+array methods
+
+retornar esto ['H', 'E', 'L', 'L', 'O'];
+
+['H', 'E'].join(['L', 'L', 'O']);
+['H', 'E'].concat(['L', 'L', 'O'])
+['H', 'E'].sort(['L', 'L', 'O'])
+['H', 'E'].push(['L', 'L', 'O'])
+
+maneras de hacer un for en JS
+
+
+<input on-click="_count" > Clicks: [[counter]]}
+
+counter {
+    type: Number,
+    value: 0
+}
+ 
+
+cual de las siguientes es valida para una promesa
+
+try, catch, finally
+
+resolve, reject, finally
+
+then, catch,finally
+
